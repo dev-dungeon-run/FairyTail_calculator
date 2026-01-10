@@ -1,22 +1,35 @@
 .container-for-whole-calculator-page {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 98vh;
+    width: 100%;
     background-color: burlywood;
 }
 
+/* -------------- switches -------------- */
 .page-switches {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
     padding: 0;
     margin-bottom: 0px;
     background-color: pink;
 }
 
+.toggle {
+    background-color: lightgray;
+}
+
+.math-switch {
+    background-color: lightgreen;
+}
+
 .whole-calculator-and-math-screen {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+    max-width: 1400px;
 }
