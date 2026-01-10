@@ -1,5 +1,6 @@
 
 .container-for-whole-calculator-page {
+    font-family: "DynaPuff", system-ui;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +45,7 @@
 
 .math-button {
     background-color: orange;
+    font-weight: 900;
     border: none;
     border-radius: 12px;
     width: 130px;
