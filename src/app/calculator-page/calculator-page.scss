@@ -1,0 +1,22 @@
+.container-for-whole-calculator-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: burlywood;
+}
+
+.page-switches {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0px;
+    background-color: pink;
+}
+
+.whole-calculator-and-math-screen {
+    
+}

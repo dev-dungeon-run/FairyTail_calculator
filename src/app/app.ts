@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CalculatorPage } from './calculator-page/calculator-page';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, CalculatorPage],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
