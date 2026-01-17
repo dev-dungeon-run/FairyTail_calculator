@@ -1,4 +1,3 @@
-
 .container-for-whole-calculator-page {
     font-family: "DynaPuff", system-ui;
     display: flex;
@@ -68,10 +67,10 @@
 // ----------------------------------------------------------------------
 .whole-calculator-and-math-screen {
     display: flex;
+    gap: 10px;
     padding: 10px;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(9, 49, 63);
     width: 50vw;
     min-width: 300px;
     max-width: 1400px;
@@ -90,18 +89,52 @@
 .calculator-screen {
     background-color: rgb(179, 179, 68);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 13vh;
+    height: 15vh;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.9);
+}
+
+.calculator-screen-image {
+    background-color: rgba(211, 211, 211, 0.366);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
 }
 
 .calculator-buttons {
     background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 1fr;
+
+    gap: 10px;
+    padding: 5px 5px 15px 5px;
+
     width: 100%;
-    height: 80%;
+    height: 70%;
+    
+    aspect-ratio: 1/1;
+}
+
+.calculator-buttons>* {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 8px;
+
+    font-size: 1.5rem;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+}
+
+.equals {
+    grid-row: span 2;
+    background-color: gold;
 }
